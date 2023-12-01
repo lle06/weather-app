@@ -1,11 +1,12 @@
-body {
+body { 
   font-family: 'Inter', sans-serif;
-  color: #5D6165;
   font-size: 16px;
+  color:#5D6165;
+  background: white;
 }
 
 .container {
-  background: white;
+  background: linear-gradient(67.6deg, rgb(225, 242, 254) -4.8%, rgb(193, 224, 250) 44.6%, rgb(102, 178, 244) 102.4%);
   max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -65,7 +66,11 @@ footer {
 
 .daily-temp .emoji {
   font-size: 30px;
+  padding-bottom: 30px;
+}
 
+.temp {
+  font-size:
 }
 
 .main-temp {
@@ -99,5 +104,9 @@ footer {
 
 .column-1.daily-temp {
   margin-top:-15%;
+}
+
+.weekly-forecast .emoji {
+  padding: 5px;
 }
 
