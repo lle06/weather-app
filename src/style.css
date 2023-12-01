@@ -73,13 +73,6 @@ footer {
   font-size:
 }
 
-.main-temp {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjust the number and size of columns as needed */
-  gap: 10px; /* Adjust the gap between columns */
-  align-items: start;
-}
-
 .weekly-forecast {
   display: grid;
   margin-top: -7%;
@@ -110,3 +103,41 @@ footer {
   padding: 5px;
 }
 
+.flex-container {
+  display: inline-flex;
+  margin-top: 1%;
+  padding-bottom:8%;
+  width: 100%;
+  /* Other flex properties can be applied here */
+}
+
+.flex-item {
+  font-size:13px;
+}
+
+.flex-container .daily-temp-icon {
+  font-size:45px;
+
+}
+
+.flex-container .daily-temp {
+  font-size: 78px;
+  margin-top: -15px;
+  color: #294CA3;
+  /* Styling for flex items */
+}
+
+.flex-container .farenheit {
+  color: #294CA3;
+}
+
+.flex-container .temp-scale{
+  font-size: 16px;
+  /* Styling for flex items */
+}
+
+.flex-container .additional-info{
+  text-align: right;
+  padding-left: 39%;
+  /* Styling for flex items */
+}
