@@ -2,7 +2,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color:#5D6165;
-  background: white;
+  background-image: repeating-linear-gradient(-90deg, rgb(244, 233, 228) -25.2%, rgb(232, 176, 94) 100%),
+                  url("../../media/examples/lizard.png");
 }
 
 .container {
@@ -27,9 +28,6 @@ body {
   font-weight:600;
 }
 
-.farenheit {
-  font-weight: bold;
-}
 
 .additional-info {
   font-size: 14px;
@@ -37,6 +35,7 @@ body {
 
 .temp-scale {
   font-size: 16px;
+  font-weight: 400;
 }
 
 .desc {
@@ -85,8 +84,13 @@ footer {
   text-align: right;
 }
 
+
 .weekly-forecast {
   text-align: center;
+}
+
+.day {
+  font-weight:600;
 }
 
 .column-1.daily-temp {
@@ -112,7 +116,6 @@ footer {
 
 .flex-container .daily-temp-icon {
   font-size:42px;
-
 }
 
 .flex-container .daily-temp {
@@ -130,6 +133,7 @@ footer {
 .flex-container .temp-scale{
   font-size: 16px;
   padding-left: 1%;
+  font-weight:600;
   /* Styling for flex items */
 }
 
@@ -175,5 +179,5 @@ footer {
 footer {
   padding-left: 2%;
   letter-spacing:.25px;
-  font-size: 14px;
+  font-size: 14px;  
 }
