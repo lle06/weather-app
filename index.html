@@ -3,11 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>weather app</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <footer>Website hosted on <a href="https://app.netlify.com/teams/lle06-vlonuh0/overview"> Nelify </a> & Code hosted on <a href="https://github.com/lle06/weather-app"> GitHub</a>
-    </footer>
-</body>
+    <div class = "container">
+        <main>
+            <div class = "cityTime">
+                <h2 class = "city" id = "city">
+                
+                </h2>
+                <p class = "dateTime" id = "dateTime">
+                    Jul 8 | 6:01 pm  — Thursday 
+                </p>
+            </div>
+            <div class = "flex-container">
+                    <div class = "flex-item daily-temp-icon"> ☀️ </div>
+                    <div id = "currentTemp" class = "flex-item daily-temp" > </div>
+                    <div class = "flex-item temp-scale">                    
+                        <span class="farenheit">℉ </span> | ℃
+                        <br><span class = "desc">
+                            mostly cloudy
+                        </span>
+                    </div>
+                    <div class = "flex-item additional-info"> 
+                       <strong> precipitation: </strong> <span class="info-value precip"> 2% </span>
+                        <div> <strong>wind:</strong> <span class="info-value mph">  3mph </span></div>
+                        <div> <strong> humidity:</strong> <span class="info-value humid"> 83%</span></div>
+                    </div>
+                </div>
+        </main>
+        <div class = "row weekly-forecast">
+            <div class = "column-1 mon">
+                <div class = "day">
+                    mon
+                </div>
+                <div class = "emoji">
+                    ☀️
+                </div>
+                <div class = "temp">
+                    <span class = "lo-temp">
+                        58°
+                    </span>
+                    <span class = "hi-temp">
+                        82°
+                    </span>
+                </div>
+            </div>
+            <div class = "column-2 tues">
+                <div class = "day">
+                    tues
+                </div>
+                <div class = "emoji">
+                    ☀️
+                </div>
+                <div class = "temp">
+                    <span class = "lo-temp">
+                        58°
+                    </span>
+                    <span class = "hi-temp">
+                        82°
+                    </span>
+                </div>
+            </div>
+            <div class = "column-3 wed">
+                <div class = "day">
+                    wed
+                </div>
+                <div class = "emoji">
+                    ☀️
+                </div>
+                <div class = "temp">
+                    <span class = "lo-temp">
+                        58°
+                    </span>
+                    <span class = "hi-temp">
+                        82°
+                    </span>
+                </div>
+            </div>
+            <div class = "column-4 thurs">
+                <div class = "day">
+                    thurs
+                </div>
+                <div class = "emoji">
+                    ☀️
+                </div>
+                <div class = "temp">
+                    <span class = "lo-temp">
+                        58°
+                    </span>
+                    <span class = "hi-temp">
+                        82°
+                    </span>
+                </div>
+            </div>
+            <div class = "column-5 fri">
+                <div class = "day">
+                    fri
+                </div>
+                <div class = "emoji">
+                    ☀️
+                </div>
+                <div class = "temp">
+                    <span class = "lo-temp">
+                        58°
+                    </span>
+                    <span class = "hi-temp">
+                        82°
+                    </span>
+                </div>
+            </div>
+        </div>
+        <form id = "search-form" class = "search-form" >
+            <input 
+                type = "search"
+                id = "search-form-input" 
+                class = "search-form-input"  
+                placeholder="Enter a city" 
+                required="">
+            <input 
+                type = "submit" 
+                value="search"
+                class="search-form-button" >
+        </form>
+            <footer>hosted on <a href="https://app.netlify.com/teams/lle06-vlonuh0/overview"> Nelify </a> & Code hosted on <a href="https://github.com/lle06/weather-app"> GitHub</a>
+            </footer>
+        </div>
+        <script src="src/app.js"></script>
+    </body>
 </html>

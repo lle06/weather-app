@@ -1,0 +1,182 @@
+body { 
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color:#5D6165;
+  background-color: #f9f7fe;
+}
+
+.container {
+  background: linear-gradient(67.6deg, rgb(225, 242, 254) -4.8%, rgb(197, 224, 247) 44.6%, rgb(194, 222, 247) 102.4%);
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  padding: 30px;
+  border-radius: 10px
+}
+
+.weekly-forecast {
+  color: #294CA3;
+}
+
+.lo-temp {
+  color:#5D6165;
+}
+
+.hi-temp {
+  color:#294CA3;
+  font-weight:600;
+}
+
+
+.additional-info {
+  font-size: 14px;
+}
+
+.temp-scale {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.desc {
+  font-size: 14px;
+  letter-spacing:.25px;
+}
+
+h1 {
+  font-size: 78px;
+  margin-top:7px;
+  font-weight:400;
+  color: #294CA3;
+}
+
+h2 {
+  margin-bottom: .5%;
+  font-weight: 600;
+  color: #294CA3;
+}
+
+p {
+  margin-top: 0;
+}
+
+footer {
+  font-size: 12px;
+}
+
+.daily-temp .emoji {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.temp {
+  font-size:
+}
+
+.weekly-forecast {
+  display: grid;
+  margin-top: -7%;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number and size of columns as needed */
+  gap: 22px; /* Adjust the gap between columns */
+}
+
+.additional-info {
+  text-align: right;
+}
+
+
+.weekly-forecast {
+  text-align: center;
+}
+
+.day {
+  font-weight:600;
+}
+
+.column-1.daily-temp {
+  margin-top:-15%;
+}
+
+.weekly-forecast .emoji {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.flex-container {
+  display: inline-flex;
+  margin-top: 1%;
+  padding-bottom:8%;
+  width: 100%;
+  /* Other flex properties can be applied here */
+}
+
+.flex-item {
+  font-size:14px;
+}
+
+.flex-container .daily-temp-icon {
+  font-size:42px;
+}
+
+.flex-container .daily-temp {
+  font-size: 78px;
+  font-weight: 600;
+  margin-top: -15px;
+  color: #294CA3;
+  /* Styling for flex items */
+}
+
+.flex-container .farenheit {
+  color: #294CA3;
+}
+
+.flex-container .temp-scale{
+  font-size: 16px;
+  padding-left: 1%;
+  font-weight:600;
+  /* Styling for flex items */
+}
+
+.flex-container .additional-info{
+  text-align: right;
+  padding-left: 39%;
+  line-height: 1.25;
+  letter-spacing:.25px;
+  /* Styling for flex items */
+}
+
+.search-form {
+  padding-top:4%;
+  padding-bottom: 2%;
+}
+
+.search-form .search-form-input {
+  border:none;
+  width: 70%;
+  padding: 15px 30px;
+  border-radius: 6px;
+  letter-spacing: .25px;
+}
+
+.search-form .search-form-input {
+  font-size:16px;
+}
+
+.search-form .search-form-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color:white;
+  margin-left:1%;
+  background-color: #294CA3;
+  font-size:16px;
+}
+
+.search-form-button {
+  letter-spacing: .75px;
+}
+
+footer {
+  padding-left: 2%;
+  letter-spacing:.25px;
+  font-size: 14px;  
+}
