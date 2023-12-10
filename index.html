@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,17 +15,17 @@
 <body>
     <div class = "container">
         <main>
-            <div class = "city-time">
-                <h2>
-                    Los Angeles
+            <div class = "cityTime">
+                <h2 class = "city" id = "city">
+                
                 </h2>
-                <p>
+                <p class = "dateTime" id = "dateTime">
                     Jul 8 | 6:01 pm  — Thursday 
                 </p>
             </div>
             <div class = "flex-container">
                     <div class = "flex-item daily-temp-icon"> ☀️ </div>
-                    <div class = "flex-item daily-temp"> 76 </div>
+                    <div id = "currentTemp" class = "flex-item daily-temp" > </div>
                     <div class = "flex-item temp-scale">                    
                         <span class="farenheit">℉ </span> | ℃
                         <br><span class = "desc">
@@ -120,13 +121,21 @@
                 </div>
             </div>
         </div>
-        <div class = "search-form">
-            <input id = "search-form-input" class = "search-form-input" type=" search" placeholder="Enter a city" required="">
-
-            <input class="search-form-button" type = "submit" value="search">
-            </div>
+        <form id = "search-form" class = "search-form" >
+            <input 
+                type = "search"
+                id = "search-form-input" 
+                class = "search-form-input"  
+                placeholder="Enter a city" 
+                required="">
+            <input 
+                type = "submit" 
+                value="search"
+                class="search-form-button" >
+        </form>
             <footer>hosted on <a href="https://app.netlify.com/teams/lle06-vlonuh0/overview"> Nelify </a> & Code hosted on <a href="https://github.com/lle06/weather-app"> GitHub</a>
             </footer>
         </div>
+        <script src="src/app.js"></script>
     </body>
 </html>

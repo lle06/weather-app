@@ -2,8 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color:#5D6165;
-  background-image: repeating-linear-gradient(-90deg, rgb(244, 233, 228) -25.2%, rgb(232, 176, 94) 100%),
-                  url("../../media/examples/lizard.png");
+  background-color: #f9f7fe;
 }
 
 .container {
