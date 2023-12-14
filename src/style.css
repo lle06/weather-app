@@ -87,6 +87,7 @@ footer {
 .flex-container {
   display: inline-flex;
   margin-top: 1%;
+  margin-left: 1%;
   padding-bottom:6.5%;
   width: 100%;
   /* Other flex properties can be applied here */
