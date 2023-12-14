@@ -87,7 +87,7 @@ footer {
 .flex-container {
   display: inline-flex;
   margin-top: 1%;
-  padding-bottom:8%;
+  padding-bottom:6.5%;
   width: 100%;
   /* Other flex properties can be applied here */
 }
@@ -98,6 +98,7 @@ footer {
 
 .flex-container .daily-temp-icon {
   margin-top:-18px;
+  margin-left:-18px;
   width:95px;
 }
 
