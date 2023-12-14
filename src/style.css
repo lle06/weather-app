@@ -6,16 +6,16 @@ body {
 }
 
 .container {
-  background: linear-gradient(67.6deg, rgb(225, 242, 254) -4.8%, rgb(197, 224, 247) 44.6%, rgb(194, 222, 247) 102.4%);
+  background: linear-gradient(67.6deg, rgb(225, 242, 254) -4.8%, rgb(203, 231, 255) 44.6%);
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.10);
   padding: 30px;
   border-radius: 10px
 }
 
 .weekly-forecast {
-  color: #294CA3;
+  color: 5D6165;
 }
 
 .lo-temp {
@@ -23,22 +23,24 @@ body {
 }
 
 .hi-temp {
-  color:#294CA3;
+  color: 5D6165;
   font-weight:600;
 }
 
 
-.additional-info {
-  font-size: 14px;
+#humidity {
+  font-size:16px;
+  font-weight: 600;
+
 }
 
-.temp-scale {
+#wind-speed {
   font-size: 16px;
-  font-weight: 400;
+  font-weight:600;
 }
 
-.desc {
-  font-size: 14px;
+#desc {
+  font-size: 16px;
   letter-spacing:.25px;
 }
 
@@ -46,13 +48,13 @@ h1 {
   font-size: 78px;
   margin-top:7px;
   font-weight:400;
-  color: #294CA3;
+  color: black;
 }
 
 h2 {
   margin-bottom: .5%;
   font-weight: 600;
-  color: #294CA3;
+  color: black;
 }
 
 p {
@@ -66,10 +68,6 @@ footer {
 .daily-temp .emoji {
   font-size: 30px;
   padding-bottom: 30px;
-}
-
-.temp {
-  font-size:
 }
 
 .weekly-forecast {
@@ -89,7 +87,7 @@ footer {
 }
 
 .day {
-  font-weight:600;
+  font-weight:400;
 }
 
 .column-1.daily-temp {
@@ -110,7 +108,7 @@ footer {
 }
 
 .flex-item {
-  font-size:14px;
+  font-size:16px;
 }
 
 .flex-container .daily-temp-icon {
@@ -121,24 +119,21 @@ footer {
   font-size: 78px;
   font-weight: 600;
   margin-top: -15px;
-  color: #294CA3;
+  color: black;
   /* Styling for flex items */
 }
 
-.flex-container .farenheit {
-  color: #294CA3;
-}
-
 .flex-container .temp-scale{
-  font-size: 16px;
-  padding-left: 1%;
+  margin-top: -5px;
+  font-size: 30px;
   font-weight:600;
+  color: black;
   /* Styling for flex items */
 }
 
 .flex-container .additional-info{
   text-align: right;
-  padding-left: 39%;
+  padding-left: 50%;
   line-height: 1.25;
   letter-spacing:.25px;
   /* Styling for flex items */
@@ -167,7 +162,7 @@ footer {
   border-radius: 6px;
   color:white;
   margin-left:1%;
-  background-color: #294CA3;
+  background-color: black;
   font-size:16px;
 }
 
