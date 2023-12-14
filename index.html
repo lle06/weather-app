@@ -17,25 +17,23 @@
         <main>
             <div class = "cityTime">
                 <h2 class = "city" id = "city">
-                
                 </h2>
                 <p class = "dateTime" id = "dateTime">
-                    Jul 8 | 6:01 pm  — Thursday 
+                    <span id = "date" >Jul 8, </span> <span id = "time" ></span> 
+                    <br>
+                    <span id = "desc"></span>
                 </p>
             </div>
             <div class = "flex-container">
-                    <div class = "flex-item daily-temp-icon"> ☀️ </div>
+                    <div class = "flex-item daily-temp-icon" id = "daily-temp-icon"> </div>
                     <div id = "currentTemp" class = "flex-item daily-temp" > </div>
                     <div class = "flex-item temp-scale">                    
-                        <span class="farenheit">℉ </span> | ℃
-                        <br><span class = "desc">
-                            mostly cloudy
+                        <span class="farenheit">℉ </span>
                         </span>
                     </div>
                     <div class = "flex-item additional-info"> 
-                       <strong> precipitation: </strong> <span class="info-value precip"> 2% </span>
-                        <div> <strong>wind:</strong> <span class="info-value mph">  3mph </span></div>
-                        <div> <strong> humidity:</strong> <span class="info-value humid"> 83%</span></div>
+                        <div class = "humidity"> humidity: <span id ="humidity"></span></div>
+                        <div class = "wind"> wind: <span id="wind-speed"> </span></div>
                     </div>
                 </div>
         </main>
