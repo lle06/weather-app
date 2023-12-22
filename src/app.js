@@ -20,6 +20,8 @@ function updateWeather(response) {
     currenTempElement.innerHTML = Math.round(temperature);
     windSpeedElement.innerHTML =`${Math.round(windSpeed)}mph`;
 
+    getForecast(response.data.city);
+
 }
 
 function formatDate(date) {
@@ -44,9 +46,62 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
+
+function formatDay (timestamp) {
+    let date = new Date (timestamp * 1000);
+    let days = ["sun", "mon", "tues", "wed", "thurs", "fri", "sat"];
+
+    return days [date.getDay()];
+}
+
+
+function getForecast(city) {
+    let apiKey ="41ac53a28fd8b3fdd43983da09t8o268";
+    let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+
+    axios(apiURL).then(displayForecast);
+}
+
+
+function displayForecast(response) {
+    console.log(response.data);
+
+    let forecastHTML = "";
+
+    response.data.daily.forEach(function(day, index) {
+        if (index < 5) {
+             forecastHTML =
+                forecastHTML +
+                `<div class = "row weekly-forecast" id = "forecast">
+                <div class = "column-1">
+                    <div class = "day">
+                        ${formatDay(day.time)}
+                    </div>
+                    <div>
+                        <img src = "${day.condition.icon_url}"  class = "emoji"/>
+                    </div>
+                    <div class = "temp">
+                        <span class = "hi-temp"><strong>
+                            ${Math.round(day.temperature.maximum)}°
+                        </strong>
+                        </span>
+                        <span class = "lo-temp">
+                            ${Math.round(day.temperature.minimum)}°
+                        </span>
+                    </div>
+                </div>
+            </div>`;
+        }
+    });
+    
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = forecastHTML;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+
+
 searchCity("Denver");
 
-// vanilla weather search/ weather data
