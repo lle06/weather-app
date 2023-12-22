@@ -1,8 +1,9 @@
 body { 
   font-family: 'Lato', sans-serif;
-  font-size: -101px;
   color:#5D6165;
   background-color: #f9f7fe;
+  font-size: 16px;
+  letter-spacing:.25px;
 }
 
 .container {
@@ -14,74 +15,48 @@ body {
   border-radius: 10px
 }
 
-.weekly-forecast {
-  color: 5D6165;
-}
-
-.lo-temp {
-  color:#5D6165;
-}
-
-.hi-temp {
-  color: 5D6165;
-  font-weight:600;
-}
-
-
-#humidity {
-  font-weight: 600;
-
-}
-
-#wind-speed {
-  font-weight:600;
-}
-
-#desc {
-  font-size: 16px;
-  letter-spacing:.25px;
-}
-
 h1 {
   font-size: 78px;
   margin-top:7px;
   font-weight:400;
-  color: black;
+  color: #001b48;
 }
 
 h2 {
   margin-bottom: .5%;
   font-weight: 600;
-  color: black;
+  color: #001b48;
+}
+
+.hi-temp {
+  color: #001b48;
+  padding: 5%;
+}
+
+.lo-temp {
+  font-size:15.5px;
+  opacity: .75;
 }
 
 p {
   margin-top: 0;
 }
 
-footer {
-  font-size: 12px;
-}
-
-.weekly-forecast {
-  display: grid;
-  margin-top: -7%;
-  grid-template-columns: repeat(5, 1fr); /* Adjust the number and size of columns as needed */
-  gap: 22px; /* Adjust the gap between columns */
-}
-
-
-.weekly-forecast {
+/* combine the weekly-forecast styles */
+.row .weekly-forecast {
+  display:block;
   text-align: center;
 }
 
-.day {
-  font-weight:400;
+.weekly-forecast {
+  gap: 22px;
+  display: grid;
+  margin-top: -6%;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .weekly-forecast .emoji {
-  padding: 5px;
-  font-size: 18px;
+  padding: 8px;
 }
 
 .flex-container {
@@ -90,11 +65,6 @@ footer {
   margin-left: 1%;
   padding-bottom:6.5%;
   width: 100%;
-  /* Other flex properties can be applied here */
-}
-
-.flex-item {
-  font-size:-78px;
 }
 
 .flex-container .daily-temp-icon {
@@ -103,29 +73,35 @@ footer {
   width:95px;
 }
 
-
 .flex-container .daily-temp {
   font-size: 78px;
   font-weight: 600;
   margin-top: -15px;
-  color: black;
-  /* Styling for flex items */
+  color: #001b48;
 }
 
 .flex-container .temp-scale{
   margin-top: -5px;
   font-size: 30px;
   font-weight:600;
-  color: black;
-  /* Styling for flex items */
+  color: #001b48;
 }
 
 .flex-container .additional-info{
   text-align: right;
-  padding-left: 44%;
+  padding-left: 46%;
   line-height: 1.25;
   letter-spacing:.25px;
-  /* Styling for flex items */
+  opacity: .75;
+  font-size: 15.5px
+}
+
+#wind-speed {
+  color: #001b48;
+}
+
+#humidity {
+  color:#001b48;
 }
 
 .search-form {
@@ -135,13 +111,10 @@ footer {
 
 .search-form .search-form-input {
   border:none;
-  width: 70%;
+  width: 80%;
   padding: 15px 30px;
   border-radius: 6px;
   letter-spacing: .25px;
-}
-
-.search-form .search-form-input {
   font-size:16px;
 }
 
@@ -151,11 +124,8 @@ footer {
   border-radius: 6px;
   color:white;
   margin-left:1%;
-  background-color: black;
+  background-color:#001b48;
   font-size:16px;
-}
-
-.search-form-button {
   letter-spacing: .75px;
 }
 

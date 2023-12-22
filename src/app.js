@@ -20,6 +20,8 @@ function updateWeather(response) {
     currenTempElement.innerHTML = Math.round(temperature);
     windSpeedElement.innerHTML =`${Math.round(windSpeed)}mph`;
 
+    getForecast(response.data.city);
+
 }
 
 function formatDate(date) {
@@ -44,9 +46,54 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
+
+function getForecast(city) {
+    let apiKey ="41ac53a28fd8b3fdd43983da09t8o268";
+    let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+
+    axios(apiURL).then(displayForecast);
+}
+
+
+function displayForecast(response) {
+    console.log(response.data);
+
+
+
+    let days = ["mon","tues","wed","thurs","fri"];
+    let forecastHTML = "";
+
+    days.forEach(function(day) {
+        forecastHTML = 
+            forecastHTML +
+            `<div class = "row weekly-forecast" id = "forecast">
+            <div class = "column-1">
+                <div class = "day">
+                    ${day}
+                </div>
+                <div class = "emoji">
+                    ☀️
+                </div>
+                <div class = "temp">
+                    <span class = "hi-temp"><strong>
+                        82°
+                    </strong>
+                    </span>
+                    <span class = "lo-temp">
+                        58°
+                    </span>
+                </div>
+            </div>
+        </div>`;
+    });
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = forecastHTML;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+
+
 searchCity("Denver");
 
-// vanilla weather search/ weather data
