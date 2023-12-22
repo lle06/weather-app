@@ -56,21 +56,26 @@ p {
 }
 
 .weekly-forecast .emoji {
-  padding: 8px;
+  width: 45px;
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
 }
 
 .flex-container {
   display: inline-flex;
   margin-top: 1%;
   margin-left: 1%;
-  padding-bottom:6.5%;
+  padding-bottom:8%;
   width: 100%;
 }
 
-.flex-container .daily-temp-icon {
-  margin-top:-18px;
+
+.weather-app-icon {
+  margin-top:-10px;
   margin-left:-18px;
-  width:95px;
+  display: block;
+  width:73px;
 }
 
 .flex-container .daily-temp {
@@ -89,7 +94,7 @@ p {
 
 .flex-container .additional-info{
   text-align: right;
-  padding-left: 46%;
+  padding-left: 50%;
   line-height: 1.25;
   letter-spacing:.25px;
   opacity: .75;
@@ -105,7 +110,7 @@ p {
 }
 
 .search-form {
-  padding-top:4%;
+  padding-top:5%;
   padding-bottom: 2%;
 }
 
